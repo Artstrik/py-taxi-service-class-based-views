@@ -8,8 +8,8 @@
       {% for manufacturer in manufacturer_list %}
         <li><a>{{ manufacturer.name }}</a></li>
       {% endfor %}
+    </table>
   {% else %}
     <p>There are no manufacturers in Taxi Service</p>
-    </table>
   {% endif %}
 {% endblock %}
