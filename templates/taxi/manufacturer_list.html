@@ -4,12 +4,12 @@
   <h1>Manufacturer List</h1>
 
   {% if manufacturer_list %}
-    <ul>
+    <table>
       {% for manufacturer in manufacturer_list %}
-        <li><a href="#">{{ manufacturer.name }}</a></li>
+        <li><a>{{ manufacturer.name }}</a></li>
       {% endfor %}
   {% else %}
     <p>There are no manufacturers in Taxi Service</p>
-    </ul>
+    </table>
   {% endif %}
 {% endblock %}
