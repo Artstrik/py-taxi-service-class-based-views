@@ -5,22 +5,11 @@
 
   {% if manufacturer_list %}
     <table>
-      <thead>
+      {% for manufacturer in manufacturer_list %}
         <tr>
-          <th>Название производителя</th>
+          <td><a href="#">{{ manufacturer.name }}</a></td>
         </tr>
-      </thead>
-      <tbody>
-        {% for manufacturer in manufacturer_list %}
-          <tr>
-            <td>
-              <a href="#">
-                {{ manufacturer.name }}
-              </a>
-            </td>
-          </tr>
-        {% endfor %}
-      </tbody>
+      {% endfor %}
     </table>
   {% else %}
     <p>There are no manufacturers in Taxi Service</p>
